@@ -31,8 +31,8 @@ import java.util.stream.Collectors;
 public class SwaggerConfig {
     @Bean
     public Docket docket() {
-        Docket docket = new Docket(DocumentationType.OAS_30)
-                .apiInfo(apiInfo()).enable(true)
+        Docket docket = new Docket(DocumentationType.SWAGGER_2)
+                .apiInfo(apiInfo())
                 .select()
                 //apis： 添加swagger接口提取范围
                 .apis(RequestHandlerSelectors.basePackage("com.kelin.mall.controller"))
