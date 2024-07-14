@@ -7,6 +7,6 @@ import org.springframework.context.annotation.Configuration;
  * MyBatis配置类
  */
 @Configuration
-@MapperScan("com.kelin.mall.mbg.mapper")
+@MapperScan({"com.kelin.mall.mbg.mapper", "com.kelin.mall.dao"})
 public class MyBatisConfig {
 }
